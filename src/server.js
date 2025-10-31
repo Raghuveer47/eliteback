@@ -26,11 +26,39 @@ connectDB();
 // Security middleware
 app.use(helmet());
 
-// CORS configuration (temporarily permissive for debugging)
-app.use(cors({
-  origin: process.env.CORS_ORIGIN || true,
-  credentials: true
-}));
+// CORS configuration (robust origin matching, supports multiple origins, trims slashes)
+const rawOrigins = (process.env.CORS_ORIGIN || '').split(',').map(s => s.trim()).filter(Boolean);
+const allowedOrigins = rawOrigins.length > 0 ? rawOrigins.map(o => o.replace(/\/$/, '')) : ['*'];
+
+app.use((req, res, next) => {
+  try {
+    const reqOrigin = (req.headers.origin || '').replace(/\/$/, '');
+    const isAllowed = allowedOrigins.includes('*') || allowedOrigins.includes(reqOrigin);
+    const corsOptions = {
+      origin: isAllowed ? reqOrigin || true : false,
+      credentials: true,
+      allowedHeaders: ['Content-Type', 'Authorization'],
+      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS']
+    };
+    return cors(corsOptions)(req, res, next);
+  } catch (e) {
+    return cors({ origin: true, credentials: true })(req, res, next);
+  }
+});
+
+// Handle preflight globally
+app.options('*', (req, res) => {
+  const reqOrigin = (req.headers.origin || '').replace(/\/$/, '');
+  const isAllowed = allowedOrigins.includes('*') || allowedOrigins.includes(reqOrigin);
+  if (isAllowed) {
+    res.header('Access-Control-Allow-Origin', reqOrigin);
+    res.header('Vary', 'Origin');
+    res.header('Access-Control-Allow-Credentials', 'true');
+    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,PATCH,DELETE,OPTIONS');
+  }
+  return res.sendStatus(204);
+});
 
 // Rate limiting - DISABLED FOR DEVELOPMENT
 // const limiter = rateLimit({
