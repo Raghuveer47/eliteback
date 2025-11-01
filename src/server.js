@@ -10,13 +10,21 @@ require('dotenv').config();
 const connectDB = require('./config/database');
 const bettingRoutes = require('./routes/betting');
 const authRoutes = require('./routes/auth');
+const supportRoutes = require('./routes/support');
+const kycRoutes = require('./routes/kyc');
 
 const app = express();
 const server = http.createServer(app);
+
+// Parse CORS origins for Socket.IO (must be array or function, not comma-separated string)
+const corsOrigins = (process.env.CORS_ORIGIN || '').split(',').map(s => s.trim()).filter(Boolean);
+const socketCorsOrigin = corsOrigins.length > 0 ? corsOrigins : true;
+
 const io = new Server(server, {
   cors: {
-    origin: process.env.CORS_ORIGIN || true,
-    credentials: true
+    origin: socketCorsOrigin,
+    credentials: true,
+    methods: ['GET', 'POST']
   }
 });
 
@@ -37,7 +45,7 @@ app.use((req, res, next) => {
     const corsOptions = {
       origin: isAllowed ? reqOrigin || true : false,
       credentials: true,
-      allowedHeaders: ['Content-Type', 'Authorization'],
+      allowedHeaders: ['Content-Type', 'Authorization', 'Cache-Control'],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS']
     };
     return cors(corsOptions)(req, res, next);
@@ -54,7 +62,7 @@ app.options('*', (req, res) => {
     res.header('Access-Control-Allow-Origin', reqOrigin);
     res.header('Vary', 'Origin');
     res.header('Access-Control-Allow-Credentials', 'true');
-    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Cache-Control');
     res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,PATCH,DELETE,OPTIONS');
   }
   return res.sendStatus(204);
@@ -87,6 +95,8 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use('/api/betting', bettingRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/support', supportRoutes);
+app.use('/api/kyc', kycRoutes);
 
 // In-memory blackjack sessions (simple, per-user)
 const blackjackState = new Map(); // key: userId, value: { deckId, player:[], dealer:[] }

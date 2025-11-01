@@ -44,7 +44,7 @@ const userSchema = new mongoose.Schema({
   },
   isVerified: {
     type: Boolean,
-    default: true // Auto-verify for demo
+    default: false // Require KYC verification
   },
   status: {
     type: String,
@@ -93,8 +93,23 @@ const userSchema = new mongoose.Schema({
   },
   kycStatus: {
     type: String,
-    enum: ['pending', 'approved', 'rejected'],
-    default: 'approved' // Auto-approve for demo
+    enum: ['not_submitted', 'pending', 'approved', 'rejected'],
+    default: 'not_submitted'
+  },
+  kycData: {
+    phoneNumber: { type: String, default: null },
+    phoneVerified: { type: Boolean, default: false },
+    emailVerified: { type: Boolean, default: false },
+    documentType: { type: String, enum: ['aadhaar', 'pan', null], default: null },
+    documentNumber: { type: String, default: null },
+    documentImage: { type: String, default: null }, // Cloudinary URL
+    submittedAt: { type: Date, default: null },
+    verifiedAt: { type: Date, default: null },
+    rejectionReason: { type: String, default: null }
+  },
+  kycBonusReceived: {
+    type: Boolean,
+    default: false
   },
   lastLogin: {
     type: Date,

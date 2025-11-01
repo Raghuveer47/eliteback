@@ -113,4 +113,34 @@ exports.me = async (req, res) => {
   }
 };
 
+// POST /api/auth/sync-user - Update user info from frontend
+exports.syncUser = async (req, res) => {
+  try {
+    const { userId, email, firstName, lastName } = req.body;
+    
+    if (!userId) {
+      return res.status(400).json({ success: false, message: 'userId required' });
+    }
+
+    const user = await User.findOne({ userId });
+    if (!user) {
+      return res.status(404).json({ success: false, message: 'User not found' });
+    }
+
+    // Update user info
+    if (email) user.email = email;
+    if (firstName) user.firstName = firstName;
+    if (lastName) user.lastName = lastName;
+
+    await user.save();
+
+    console.log(`User synced: ${userId}`);
+
+    res.json({ success: true, message: 'User synced' });
+  } catch (error) {
+    console.error('Sync user error:', error);
+    res.status(500).json({ success: false, message: 'Server error' });
+  }
+};
+
 
