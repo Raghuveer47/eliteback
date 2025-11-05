@@ -13,6 +13,7 @@ const {
   approveDeposit,
   rejectDeposit,
   getAllUsers,
+  updateUserStatus,
   getAllTransactions,
   recordCasinoBet,
   recordCasinoWin,
@@ -21,6 +22,14 @@ const {
   approveWithdrawal,
   rejectWithdrawal
 } = require('../controllers/bettingController');
+
+const {
+  getActivePaymentMethods,
+  getAllPaymentConfigs,
+  upsertPaymentConfig,
+  deletePaymentConfig,
+  initializeDefaultPaymentMethods
+} = require('../controllers/paymentConfigController');
 
 // Test endpoint
 router.get('/test', (req, res) => {
@@ -58,6 +67,7 @@ router.post('/admin/reject-deposit/:transactionId', rejectDeposit);
 router.post('/admin/approve-withdrawal/:transactionId', approveWithdrawal);
 router.post('/admin/reject-withdrawal/:transactionId', rejectWithdrawal);
 router.get('/admin/users', getAllUsers);
+router.post('/admin/update-user-status', updateUserStatus);
 router.get('/admin/transactions', getAllTransactions);
 
 // Casino endpoints
@@ -67,5 +77,12 @@ router.post('/casino/loss', recordCasinoLoss);
 
 // User sync endpoint (called after Supabase registration)
 router.post('/sync-user', syncUserFromSupabase);
+
+// Payment Configuration endpoints
+router.get('/payment-config', getActivePaymentMethods); // For users
+router.get('/admin/payment-config', getAllPaymentConfigs); // For admin
+router.post('/admin/payment-config', upsertPaymentConfig); // Create/Update
+router.delete('/admin/payment-config/:method', deletePaymentConfig); // Delete
+router.post('/admin/payment-config/initialize', initializeDefaultPaymentMethods); // Initialize defaults
 
 module.exports = router;

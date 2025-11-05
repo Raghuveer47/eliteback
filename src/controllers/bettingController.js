@@ -313,6 +313,7 @@ const getUserBalance = async (req, res) => {
     res.json({
       success: true,
       balance: user.balance,
+      userStatus: user.status || 'active', // Include user status for real-time monitoring
       stats: {
         totalDeposited: user.totalDeposited,
         totalWithdrawn: user.totalWithdrawn,
@@ -737,6 +738,75 @@ const syncUserFromSupabase = async (req, res) => {
   }
 };
 
+// Update user status (admin only) - NEW
+const updateUserStatus = async (req, res) => {
+  try {
+    const { userId, status } = req.body;
+
+    if (!userId || !status) {
+      return res.status(400).json({ 
+        success: false, 
+        message: 'userId and status are required' 
+      });
+    }
+
+    if (!['active', 'suspended', 'closed'].includes(status)) {
+      return res.status(400).json({ 
+        success: false, 
+        message: 'Invalid status. Must be: active, suspended, or closed' 
+      });
+    }
+
+    // Find and update user (try by userId first, then by _id, then by email)
+    let user = await User.findOne({ userId });
+    
+    if (!user) {
+      // Try finding by MongoDB _id
+      if (mongoose.Types.ObjectId.isValid(userId)) {
+        user = await User.findById(userId);
+      }
+    }
+    
+    if (!user) {
+      // Try finding by email
+      user = await User.findOne({ email: userId.toLowerCase() });
+    }
+    
+    if (!user) {
+      console.log(`User not found with identifier: ${userId}`);
+      return res.status(200).json({ 
+        success: false, 
+        message: 'User not found in MongoDB database' 
+      });
+    }
+
+    const oldStatus = user.status;
+    user.status = status;
+    await user.save();
+
+    console.log(`Admin: Updated user ${userId} status from ${oldStatus} to ${status}`);
+
+    res.status(200).json({
+      success: true,
+      message: `User status updated to ${status}`,
+      user: {
+        id: user._id.toString(),
+        userId: user.userId,
+        email: user.email,
+        status: user.status,
+        balance: user.balance
+      }
+    });
+  } catch (error) {
+    console.error('Update user status error:', error);
+    res.status(500).json({ 
+      success: false, 
+      message: 'Server error', 
+      error: error.message 
+    });
+  }
+};
+
 // Get all users (admin only)
 const getAllUsers = async (req, res) => {
   try {
@@ -1015,6 +1085,7 @@ module.exports = {
   approveDeposit,
   rejectDeposit,
   getAllUsers,
+  updateUserStatus,
   getAllTransactions,
   recordCasinoBet,
   recordCasinoWin,
