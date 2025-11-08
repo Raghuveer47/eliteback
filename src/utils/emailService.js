@@ -84,7 +84,25 @@ async function sendEmailToConsole(to, subject, html) {
 // Main email sender - Choose your provider here
 async function sendEmail(to, subject, html) {
   try {
-    const provider = process.env.EMAIL_PROVIDER || 'console';
+    // Auto-detect provider based on environment
+    let provider = process.env.EMAIL_PROVIDER;
+    
+    // If no provider set, try to auto-detect from available credentials
+    if (!provider) {
+      if (process.env.SENDGRID_API_KEY) {
+        provider = 'sendgrid';
+        console.log('📧 Auto-detected email provider: SendGrid');
+      } else if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD) {
+        provider = 'gmail';
+        console.log('📧 Auto-detected email provider: Gmail');
+      } else if (process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASSWORD) {
+        provider = 'smtp';
+        console.log('📧 Auto-detected email provider: SMTP');
+      } else {
+        provider = 'console';
+        console.log('📧 No email credentials found - using console mode (emails not sent)');
+      }
+    }
     
     switch (provider.toLowerCase()) {
       case 'sendgrid':
@@ -108,6 +126,7 @@ async function sendEmail(to, subject, html) {
     return { success: true };
   } catch (error) {
     console.error('❌ Email sending failed:', error.message);
+    console.error('Error details:', error);
     throw error;
   }
 }
