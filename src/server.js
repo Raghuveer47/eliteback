@@ -170,12 +170,14 @@ app.post('/api/betting/blackjack/stand', async (req, res) => {
   } catch { return res.status(500).json({ success:false, message:'server error' }); }
 });
 
-// Health check endpoint
+// Health check endpoint - critical for Render deployment
 app.get('/health', (req, res) => {
-  res.json({
+  res.status(200).json({
     status: 'OK',
     timestamp: new Date().toISOString(),
-    uptime: process.uptime()
+    uptime: process.uptime(),
+    port: PORT,
+    smtpConfigured: !!(process.env.SMTP_USER && process.env.SMTP_PASSWORD)
   });
 });
 
@@ -239,10 +241,13 @@ casinoNs.on('connection', (socket) => {
   } catch {}
 });
 
-server.listen(PORT, () => {
+// Bind to 0.0.0.0 for Render/production deployment
+server.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Server running on port ${PORT}`);
   console.log(`📊 Health check: http://localhost:${PORT}/health`);
   console.log(`🎯 Betting API: http://localhost:${PORT}/api/betting`);
+  console.log(`🌐 Environment: ${process.env.NODE_ENV || 'development'}`);
+  console.log(`📧 SMTP Configured: ${process.env.SMTP_USER ? 'Yes' : 'No'}`);
 });
 
 module.exports = app;
