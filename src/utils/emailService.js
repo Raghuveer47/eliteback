@@ -37,6 +37,8 @@ const sendOTPEmail = async (email, otp, expiresInMinutes = 10) => {
   try {
     const transporter = createTransporter();
 
+    console.log('📧 Sending OTP email to:', email);
+
     const mailOptions = {
       from: `"Elite Bet" <${process.env.FROM_EMAIL || process.env.SMTP_USER || 'noreply@elitebet.com'}>`,
       to: email,
@@ -98,8 +100,15 @@ const sendOTPEmail = async (email, otp, expiresInMinutes = 10) => {
       `
     };
 
-    await transporter.sendMail(mailOptions);
-    console.log(`OTP email sent successfully to ${email}`);
+    // Add timeout to prevent hanging
+    const sendPromise = transporter.sendMail(mailOptions);
+    const timeoutPromise = new Promise((_, reject) => 
+      setTimeout(() => reject(new Error('Email sending timeout')), 10000) // 10 second timeout
+    );
+
+    await Promise.race([sendPromise, timeoutPromise]);
+    
+    console.log(`✅ OTP email sent successfully to ${email}`);
     return true;
   } catch (error) {
     console.error('Failed to send OTP email:', error.message);

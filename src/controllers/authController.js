@@ -297,9 +297,6 @@ const forgotPassword = async (req, res) => {
 
     console.log(`Password Reset OTP for ${email}: ${otp}`);
 
-    // Try to send email
-    const emailSent = await sendOTPEmail(email, otp, 10);
-
     // Check if SMTP is properly configured
     const isSmtpConfigured = process.env.SMTP_USER && process.env.SMTP_PASSWORD;
 
@@ -307,18 +304,33 @@ const forgotPassword = async (req, res) => {
       console.warn('⚠️  SMTP not configured - OTP will be shown in response');
     }
 
+    // Send email in background (don't wait for it to complete)
+    let emailSent = false;
+    sendOTPEmail(email, otp, 10)
+      .then(sent => {
+        emailSent = sent;
+        if (sent) {
+          console.log(`✅ Email sent to ${email}`);
+        } else {
+          console.log(`⚠️  Email failed for ${email}, OTP was shown in response`);
+        }
+      })
+      .catch(err => {
+        console.error(`❌ Email error for ${email}:`, err.message);
+      });
+
     // Show OTP in response if:
     // 1. Development mode, OR
-    // 2. Email sending failed, OR  
-    // 3. SMTP is not configured
-    const showOtpInResponse = process.env.NODE_ENV === 'development' || !emailSent || !isSmtpConfigured;
+    // 2. SMTP is not configured
+    const showOtpInResponse = process.env.NODE_ENV === 'development' || !isSmtpConfigured;
 
+    // Respond immediately (don't wait for email)
     res.json({
       success: true,
-      message: emailSent ? 'OTP sent to your email' : 'OTP generated (check console or contact support)',
+      message: isSmtpConfigured ? 'OTP sent to your email' : 'OTP generated (check console or contact support)',
       otp: showOtpInResponse ? otp : undefined,
       expiresIn: 600, // 10 minutes in seconds
-      emailSent,
+      emailSent: isSmtpConfigured, // Assume it will be sent if configured
       smtpConfigured: isSmtpConfigured
     });
   } catch (error) {
@@ -550,20 +562,31 @@ const resendOTP = async (req, res) => {
 
     console.log(`Resent OTP for ${email}: ${otp}`);
 
-    // Try to send email
-    const emailSent = await sendOTPEmail(email, otp, 10);
-
     // Check if SMTP is properly configured
     const isSmtpConfigured = process.env.SMTP_USER && process.env.SMTP_PASSWORD;
 
-    const showOtpInResponse = process.env.NODE_ENV === 'development' || !emailSent || !isSmtpConfigured;
+    // Send email in background (don't block response)
+    sendOTPEmail(email, otp, 10)
+      .then(sent => {
+        if (sent) {
+          console.log(`✅ OTP resent via email to ${email}`);
+        } else {
+          console.log(`⚠️  Email failed for ${email}`);
+        }
+      })
+      .catch(err => {
+        console.error(`❌ Resend email error for ${email}:`, err.message);
+      });
 
+    const showOtpInResponse = process.env.NODE_ENV === 'development' || !isSmtpConfigured;
+
+    // Respond immediately
     res.json({
       success: true,
-      message: emailSent ? 'OTP resent to your email' : 'OTP generated (check console or contact support)',
+      message: isSmtpConfigured ? 'OTP resent to your email' : 'OTP generated (check console or contact support)',
       otp: showOtpInResponse ? otp : undefined,
       expiresIn: 600,
-      emailSent,
+      emailSent: isSmtpConfigured,
       smtpConfigured: isSmtpConfigured
     });
   } catch (error) {

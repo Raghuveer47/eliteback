@@ -170,6 +170,16 @@ app.post('/api/betting/blackjack/stand', async (req, res) => {
   } catch { return res.status(500).json({ success:false, message:'server error' }); }
 });
 
+// Root endpoint
+app.get('/', (req, res) => {
+  res.status(200).json({
+    name: 'Elite Bet Backend API',
+    version: '1.0.0',
+    status: 'running',
+    timestamp: new Date().toISOString()
+  });
+});
+
 // Health check endpoint - critical for Render deployment
 app.get('/health', (req, res) => {
   res.status(200).json({
