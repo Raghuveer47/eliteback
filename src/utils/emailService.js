@@ -6,14 +6,26 @@ let transporter = null;
 const createTransporter = () => {
   if (transporter) return transporter;
 
+  const host = process.env.SMTP_HOST || 'smtp.gmail.com';
+  const port = parseInt(process.env.SMTP_PORT || '587');
+  
+  // GoDaddy uses port 465 with SSL, Gmail uses 587 with TLS
+  const isSecure = port === 465 || process.env.SMTP_SECURE === 'true';
+
+  console.log('📧 Creating email transporter:', { host, port, secure: isSecure, user: process.env.SMTP_USER });
+
   // Use environment variables or default SMTP settings
   transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST || 'smtp.gmail.com',
-    port: parseInt(process.env.SMTP_PORT || '587'),
-    secure: process.env.SMTP_SECURE === 'true', // true for 465, false for other ports
+    host: host,
+    port: port,
+    secure: isSecure, // true for 465 (SSL), false for 587 (TLS)
     auth: {
       user: process.env.SMTP_USER || 'your-email@gmail.com',
-      pass: process.env.SMTP_PASSWORD || process.env.SMTP_PASS || 'your-app-password'
+      pass: process.env.SMTP_PASSWORD || process.env.SMTP_PASS || 'your-password'
+    },
+    tls: {
+      // Don't fail on invalid certificates (some providers need this)
+      rejectUnauthorized: false
     }
   });
 
