@@ -1,189 +1,147 @@
-/**
- * Email Service - Supports multiple providers
- * Choose one: SendGrid, Nodemailer (Gmail/SMTP), or Console (Development)
- */
+const nodemailer = require('nodemailer');
 
-// Uncomment the provider you want to use:
+// Create reusable transporter
+let transporter = null;
 
-// Option 1: SendGrid (Recommended for production)
-async function sendEmailWithSendGrid(to, subject, html) {
-  const sgMail = require('@sendgrid/mail');
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-  
-  const msg = {
-    to,
-    from: process.env.FROM_EMAIL || 'noreply@spinzos.com',
-    subject,
-    html
-  };
-  
-  await sgMail.send(msg);
-  console.log(`✅ Email sent via SendGrid to: ${to}`);
-}
+const createTransporter = () => {
+  if (transporter) return transporter;
 
-// Option 2: Nodemailer with Gmail
-async function sendEmailWithGmail(to, subject, html) {
-  const nodemailer = require('nodemailer');
-  
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_APP_PASSWORD // Use App Password, not regular password
-    }
-  });
-  
-  const mailOptions = {
-    from: process.env.FROM_EMAIL || process.env.GMAIL_USER,
-    to,
-    subject,
-    html
-  };
-  
-  await transporter.sendMail(mailOptions);
-  console.log(`✅ Email sent via Gmail to: ${to}`);
-}
-
-// Option 3: Nodemailer with Custom SMTP
-async function sendEmailWithSMTP(to, subject, html) {
-  const nodemailer = require('nodemailer');
-  
-  const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: process.env.SMTP_PORT || 587,
+  // Use environment variables or default SMTP settings
+  transporter = nodemailer.createTransport({
+    host: process.env.SMTP_HOST || 'smtp.gmail.com',
+    port: parseInt(process.env.SMTP_PORT || '587'),
     secure: process.env.SMTP_SECURE === 'true', // true for 465, false for other ports
     auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASSWORD
+      user: process.env.SMTP_USER || 'your-email@gmail.com',
+      pass: process.env.SMTP_PASSWORD || process.env.SMTP_PASS || 'your-app-password'
     }
   });
-  
-  const mailOptions = {
-    from: process.env.FROM_EMAIL,
-    to,
-    subject,
-    html
-  };
-  
-  await transporter.sendMail(mailOptions);
-  console.log(`✅ Email sent via SMTP to: ${to}`);
-}
 
-// Option 4: Console only (Development)
-async function sendEmailToConsole(to, subject, html) {
-  console.log('\n' + '='.repeat(80));
-  console.log('📧 EMAIL (Development Mode - Not Actually Sent)');
-  console.log('='.repeat(80));
-  console.log(`To: ${to}`);
-  console.log(`Subject: ${subject}`);
-  console.log('─'.repeat(80));
-  console.log(html);
-  console.log('='.repeat(80) + '\n');
-}
-
-// Main email sender - Choose your provider here
-async function sendEmail(to, subject, html) {
-  try {
-    // Auto-detect provider based on environment
-    let provider = process.env.EMAIL_PROVIDER;
-    
-    // If no provider set, try to auto-detect from available credentials
-    if (!provider) {
-      if (process.env.SENDGRID_API_KEY) {
-        provider = 'sendgrid';
-        console.log('📧 Auto-detected email provider: SendGrid');
-      } else if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD) {
-        provider = 'gmail';
-        console.log('📧 Auto-detected email provider: Gmail');
-      } else if (process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASSWORD) {
-        provider = 'smtp';
-        console.log('📧 Auto-detected email provider: SMTP');
-      } else {
-        provider = 'console';
-        console.log('📧 No email credentials found - using console mode (emails not sent)');
-      }
-    }
-    
-    switch (provider.toLowerCase()) {
-      case 'sendgrid':
-        await sendEmailWithSendGrid(to, subject, html);
-        break;
-      
-      case 'gmail':
-        await sendEmailWithGmail(to, subject, html);
-        break;
-      
-      case 'smtp':
-        await sendEmailWithSMTP(to, subject, html);
-        break;
-      
-      case 'console':
-      default:
-        await sendEmailToConsole(to, subject, html);
-        break;
-    }
-    
-    return { success: true };
-  } catch (error) {
-    console.error('❌ Email sending failed:', error.message);
-    console.error('Error details:', error);
-    throw error;
-  }
-}
-
-// Email Templates
-function getPasswordResetEmail(resetLink, email) {
-  return `
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
-        .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }
-        .button { display: inline-block; background: #667eea; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; margin: 20px 0; }
-        .footer { text-align: center; margin-top: 30px; color: #666; font-size: 12px; }
-        .warning { background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 20px 0; }
-      </style>
-    </head>
-    <body>
-      <div class="container">
-        <div class="header">
-          <h1>🔒 Password Reset Request</h1>
-        </div>
-        <div class="content">
-          <p>Hi there,</p>
-          <p>We received a request to reset the password for your Spinzos account (<strong>${email}</strong>).</p>
-          <p>Click the button below to reset your password:</p>
-          <center>
-            <a href="${resetLink}" class="button">Reset My Password</a>
-          </center>
-          <p>Or copy and paste this link into your browser:</p>
-          <p style="background: #fff; padding: 10px; border: 1px solid #ddd; border-radius: 5px; word-break: break-all;">
-            ${resetLink}
-          </p>
-          <div class="warning">
-            <strong>⚠️ Important:</strong>
-            <ul>
-              <li>This link expires in <strong>1 hour</strong></li>
-              <li>This link can only be used <strong>once</strong></li>
-              <li>If you didn't request this, please ignore this email</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer">
-          <p>© 2025 Spinzos. All rights reserved.</p>
-          <p>This is an automated email. Please do not reply.</p>
-        </div>
-      </div>
-    </body>
-    </html>
-  `;
-}
-
-module.exports = {
-  sendEmail,
-  getPasswordResetEmail
+  return transporter;
 };
 
+// Send OTP email
+const sendOTPEmail = async (email, otp, expiresInMinutes = 10) => {
+  try {
+    const transporter = createTransporter();
+
+    const mailOptions = {
+      from: `"Elite Bet" <${process.env.FROM_EMAIL || process.env.SMTP_USER || 'noreply@elitebet.com'}>`,
+      to: email,
+      subject: 'Password Reset OTP - Elite Bet',
+      html: `
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+            .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+            .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+            .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }
+            .otp-box { background: white; border: 2px dashed #667eea; padding: 20px; text-align: center; margin: 20px 0; border-radius: 8px; }
+            .otp-code { font-size: 32px; font-weight: bold; color: #667eea; letter-spacing: 8px; font-family: 'Courier New', monospace; }
+            .footer { text-align: center; margin-top: 20px; font-size: 12px; color: #888; }
+            .warning { background: #fff3cd; border-left: 4px solid #ffc107; padding: 12px; margin: 20px 0; }
+            .button { display: inline-block; background: #667eea; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; margin: 20px 0; }
+          </style>
+        </head>
+        <body>
+          <div class="container">
+            <div class="header">
+              <h1>🔐 Password Reset Request</h1>
+            </div>
+            <div class="content">
+              <p>Hi there,</p>
+              <p>We received a request to reset your password for your Elite Bet account. Use the OTP below to proceed:</p>
+              
+              <div class="otp-box">
+                <p style="margin: 0; font-size: 14px; color: #666;">Your OTP Code</p>
+                <div class="otp-code">${otp}</div>
+                <p style="margin: 10px 0 0 0; font-size: 12px; color: #888;">Valid for ${expiresInMinutes} minutes</p>
+              </div>
+
+              <div class="warning">
+                <strong>⚠️ Security Notice:</strong>
+                <ul style="margin: 10px 0; padding-left: 20px;">
+                  <li>This OTP expires in ${expiresInMinutes} minutes</li>
+                  <li>Never share this code with anyone</li>
+                  <li>Elite Bet will never ask for your OTP via phone or email</li>
+                  <li>If you didn't request this, please ignore this email</li>
+                </ul>
+              </div>
+
+              <p>Enter this OTP on the password reset page along with your new password.</p>
+              
+              <p style="color: #666; font-size: 14px; margin-top: 30px;">
+                If you didn't request a password reset, you can safely ignore this email. Your password will remain unchanged.
+              </p>
+            </div>
+            <div class="footer">
+              <p>&copy; ${new Date().getFullYear()} Elite Bet. All rights reserved.</p>
+              <p>This is an automated email. Please do not reply.</p>
+            </div>
+          </div>
+        </body>
+        </html>
+      `
+    };
+
+    await transporter.sendMail(mailOptions);
+    console.log(`OTP email sent successfully to ${email}`);
+    return true;
+  } catch (error) {
+    console.error('Failed to send OTP email:', error.message);
+    // Don't throw error - fall back to showing OTP in console
+    return false;
+  }
+};
+
+// Send welcome email
+const sendWelcomeEmail = async (email, firstName) => {
+  try {
+    const transporter = createTransporter();
+
+    const mailOptions = {
+      from: `"Elite Bet" <${process.env.FROM_EMAIL || process.env.SMTP_USER || 'noreply@elitebet.com'}>`,
+      to: email,
+      subject: 'Welcome to Elite Bet! 🎉',
+      html: `
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+            .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+            .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+            .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }
+          </style>
+        </head>
+        <body>
+          <div class="container">
+            <div class="header">
+              <h1>🎉 Welcome to Elite Bet!</h1>
+            </div>
+            <div class="content">
+              <p>Hi ${firstName},</p>
+              <p>Thank you for joining Elite Bet! We're excited to have you on board.</p>
+              <p>Start exploring our games and place your first bet today!</p>
+              <p>Best regards,<br>The Elite Bet Team</p>
+            </div>
+          </div>
+        </body>
+        </html>
+      `
+    };
+
+    await transporter.sendMail(mailOptions);
+    return true;
+  } catch (error) {
+    console.error('Failed to send welcome email:', error.message);
+    return false;
+  }
+};
+
+module.exports = {
+  sendOTPEmail,
+  sendWelcomeEmail
+};

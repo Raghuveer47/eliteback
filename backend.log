@@ -13,607 +13,696 @@ Attempting to connect to: mongodb://localhost:27017/elitebet
 [Socket] client connected to /casino
 [Socket] client connected to /casino
 [Socket] client connected to /casino
+[Socket] client connected to /casino
+[Socket] client connected to /casino
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:08:37 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:47:53 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:08:37 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:47:53 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:08:37 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:47:53 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:08:41 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:47:53 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:08:41 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:47:53 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:08:41 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /health
-::1 - - [01/Nov/2025:19:08:44 +0000] "GET /health HTTP/1.1" 200 73 "-" "curl/8.7.1"
+::1 - - [05/Nov/2025:15:47:53 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:08:47 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:03 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:08:47 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:03 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:08:47 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:03 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:08:51 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:03 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:08:51 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:03 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:08:51 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:03 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:08:57 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:04 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:08:57 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:04 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:08:57 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:04 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] POST /api/betting/admin/update-user-status
+Admin: Updated user dehep68496@fantastu.com status from suspended to active
+::1 - - [05/Nov/2025:15:48:04 +0000] "POST /api/betting/admin/update-user-status HTTP/1.1" 200 198 "-" "curl/8.7.1"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:09:01 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:13 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:09:01 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:13 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6135 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:09:01 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:13 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:09:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
+::1 - - [05/Nov/2025:15:48:13 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:09:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:13 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6135 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:48:13 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:09:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:09:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:23 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:09:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:23 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6135 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:09:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
+::1 - - [05/Nov/2025:15:48:23 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:10:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:10:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/users
+::1 - - [05/Nov/2025:15:48:23 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:10:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:10:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:23 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6135 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:10:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:10:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
+::1 - - [05/Nov/2025:15:48:23 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:11:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:24 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:11:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:24 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:48:24 +0000] "GET /api/auth/me HTTP/1.1" 401 43 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:48:24 +0000] "GET /api/auth/me HTTP/1.1" 401 43 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[Socket] client connected to /casino
+[Socket] client connected to /casino
 [API] GET /api/betting/admin/users
+::1 - - [05/Nov/2025:15:48:24 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6135 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:11:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:11:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:24 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6135 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:48:24 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:11:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:11:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:24 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] POST /api/betting/admin/update-user-status
+Admin: Updated user dehep68496@fantastu.com status from active to suspended
+::1 - - [05/Nov/2025:15:48:29 +0000] "POST /api/betting/admin/update-user-status HTTP/1.1" 200 204 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
+Admin: Found 0 pending deposits
+::1 - - [05/Nov/2025:15:48:32 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:12:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:32 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:48:32 +0000] "GET /api/auth/me HTTP/1.1" 401 43 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:48:32 +0000] "GET /api/auth/me HTTP/1.1" 401 43 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/users
+::1 - - [05/Nov/2025:15:48:32 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[Socket] client connected to /casino
+[API] GET /api/betting/admin/users
+::1 - - [05/Nov/2025:15:48:32 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[Socket] client connected to /casino
+[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:48:32 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:48:32 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/pending-deposits
+Admin: Found 0 pending deposits
+::1 - - [05/Nov/2025:15:48:33 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/users
+::1 - - [05/Nov/2025:15:48:33 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:48:33 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] POST /api/betting/admin/update-user-status
+Admin: Updated user dehep68496@fantastu.com status from suspended to active
+::1 - - [05/Nov/2025:15:48:37 +0000] "POST /api/betting/admin/update-user-status HTTP/1.1" 200 198 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/pending-deposits
+Admin: Found 0 pending deposits
+::1 - - [05/Nov/2025:15:48:39 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/pending-deposits
+Admin: Found 0 pending deposits
+::1 - - [05/Nov/2025:15:48:39 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:48:40 +0000] "GET /api/auth/me HTTP/1.1" 401 43 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:48:40 +0000] "GET /api/auth/me HTTP/1.1" 401 43 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/users
+::1 - - [05/Nov/2025:15:48:40 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6135 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/users
+[Socket] client connected to /casino
+::1 - - [05/Nov/2025:15:48:40 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6135 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[Socket] client connected to /casino
+[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:48:40 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:48:40 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/pending-deposits
+Admin: Found 0 pending deposits
+::1 - - [05/Nov/2025:15:48:43 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/users
+::1 - - [05/Nov/2025:15:48:43 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6135 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:48:43 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] POST /api/auth/login
+::1 - - [05/Nov/2025:15:48:47 +0000] "POST /api/auth/login HTTP/1.1" 200 505 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] POST /api/auth/sync-user
+[API] GET /api/betting/transactions/dehep68496@fantastu.com
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/auth/me
+User synced: dehep68496@fantastu.com
+::1 - - [05/Nov/2025:15:48:47 +0000] "POST /api/auth/sync-user HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/transactions/dehep68496@fantastu.com HTTP/1.1" 200 89 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/transactions/dehep68496@fantastu.com
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/transactions/dehep68496@fantastu.com HTTP/1.1" 200 89 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/transactions/dehep68496@fantastu.com
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/kyc/status/dehep68496@fantastu.com
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/kyc/status/dehep68496@fantastu.com HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/transactions/dehep68496@fantastu.com HTTP/1.1" 200 89 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/kyc/status/dehep68496@fantastu.com
+[API] GET /api/betting/transactions/dehep68496@fantastu.com
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/kyc/status/dehep68496@fantastu.com HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/transactions/dehep68496@fantastu.com HTTP/1.1" 200 89 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/transactions/dehep68496@fantastu.com
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/transactions/dehep68496@fantastu.com HTTP/1.1" 200 89 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/transactions/dehep68496@fantastu.com
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/kyc/status/dehep68496@fantastu.com
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/transactions/dehep68496@fantastu.com HTTP/1.1" 200 89 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/kyc/status/dehep68496@fantastu.com HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/kyc/status/dehep68496@fantastu.com
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/kyc/status/dehep68496@fantastu.com HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/kyc/status/dehep68496@fantastu.com
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/kyc/status/dehep68496@fantastu.com HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/kyc/status/dehep68496@fantastu.com
+[API] GET /api/auth/me
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/kyc/status/dehep68496@fantastu.com HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/kyc/status/dehep68496@fantastu.com
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/kyc/status/dehep68496@fantastu.com HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/kyc/status/dehep68496@fantastu.com
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/kyc/status/dehep68496@fantastu.com HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/kyc/status/dehep68496@fantastu.com
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/kyc/status/dehep68496@fantastu.com HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:47 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/pending-deposits
+Admin: Found 0 pending deposits
+::1 - - [05/Nov/2025:15:48:49 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/users
+::1 - - [05/Nov/2025:15:48:50 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6135 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:48:50 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/pending-deposits
+Admin: Found 0 pending deposits
+::1 - - [05/Nov/2025:15:48:53 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/users
+::1 - - [05/Nov/2025:15:48:53 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6135 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:48:53 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] POST /api/betting/admin/update-user-status
+Admin: Updated user dehep68496@fantastu.com status from active to suspended
+::1 - - [05/Nov/2025:15:48:55 +0000] "POST /api/betting/admin/update-user-status HTTP/1.1" 200 204 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/pending-deposits
+Admin: Found 0 pending deposits
+::1 - - [05/Nov/2025:15:48:58 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/pending-deposits
+Admin: Found 0 pending deposits
+::1 - - [05/Nov/2025:15:48:58 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/users
+[Socket] client connected to /casino
+::1 - - [05/Nov/2025:15:48:58 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[Socket] client connected to /casino
+[API] GET /api/betting/admin/users
+::1 - - [05/Nov/2025:15:48:58 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:48:58 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:48:58 +0000] "GET /api/auth/me HTTP/1.1" 401 43 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/transactions
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:48:58 +0000] "GET /api/auth/me HTTP/1.1" 401 43 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:48:58 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:12:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:03 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-[API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:12:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:12:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:12:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:03 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:12:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:03 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:13:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
+::1 - - [05/Nov/2025:15:49:04 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:13:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:04 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:49:04 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[Socket] client connected to /casino
+[Socket] client connected to /casino
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/betting/transactions/dehep68496@fantastu.com
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 131 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/betting/transactions/dehep68496@fantastu.com HTTP/1.1" 200 89 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/betting/transactions/dehep68496@fantastu.com
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 131 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/betting/transactions/dehep68496@fantastu.com HTTP/1.1" 200 89 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/auth/me
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 131 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 131 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 131 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 131 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 131 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 131 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/balance/dehep68496@fantastu.com
+[API] GET /api/auth/me
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/betting/balance/dehep68496@fantastu.com HTTP/1.1" 200 131 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:07 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:13:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:13:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:08 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:13:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:08 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:13:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:08 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[Socket] client connected to /casino
+[Socket] client connected to /casino
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:14:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
-[API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:14:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:14:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:49:18 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:14:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:14:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:18 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:14:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:15:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:18 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
-[API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:15:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:15:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:49:22 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:15:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:15:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:22 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:15:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:22 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:16:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
+::1 - - [05/Nov/2025:15:49:32 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:16:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:32 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:49:32 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:16:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:16:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:16:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:16:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:17:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
-[API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:17:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:17:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:49:52 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:17:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:17:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:52 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:17:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:49:52 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
-[API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:18:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:18:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/users
+::1 - - [05/Nov/2025:15:50:02 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:18:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:18:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:50:02 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:18:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:18:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
+::1 - - [05/Nov/2025:15:50:02 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:19:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:19:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/users
+::1 - - [05/Nov/2025:15:50:04 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:19:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:19:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:50:04 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:19:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:19:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:20:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:50:04 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
-[API] GET /api/betting/admin/users
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:20:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:20:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:50:12 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:20:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:20:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:50:12 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:20:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:50:12 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
-[API] GET /api/betting/admin/pending-deposits
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:21:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:21:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:50:22 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-[API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:21:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:21:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:50:22 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-[API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:21:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:21:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:50:22 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:22:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:50:32 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:22:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
+::1 - - [05/Nov/2025:15:50:32 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:50:32 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:22:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:22:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:50:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:22:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:50:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:22:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
+::1 - - [05/Nov/2025:15:50:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:23:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:23:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/users
+::1 - - [05/Nov/2025:15:50:52 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:23:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:23:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:50:52 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-[API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:23:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:23:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
+::1 - - [05/Nov/2025:15:50:52 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:24:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:24:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/users
+::1 - - [05/Nov/2025:15:51:02 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:24:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:24:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:51:02 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:24:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:24:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:25:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:51:02 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
-[API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:25:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:25:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:51:04 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:25:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:25:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:51:04 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:25:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:26:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:51:04 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
-[API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:26:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:26:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:51:12 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:26:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:26:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:51:12 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:26:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:27:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:51:12 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:27:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:51:22 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-[API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:27:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:27:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:51:22 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:27:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:27:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:28:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:51:22 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
-[API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:28:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:28:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:51:32 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:28:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:28:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:51:32 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:28:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
+::1 - - [05/Nov/2025:15:51:32 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:29:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:29:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:51:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-[API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:29:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:29:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:29:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:51:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:29:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:51:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
-[API] GET /api/betting/admin/pending-deposits
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:30:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:30:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:51:52 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-[API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:30:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:30:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:30:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:51:52 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:30:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:51:52 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:31:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:52:02 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/users
+::1 - - [05/Nov/2025:15:52:02 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:52:02 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:31:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:31:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:52:04 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:31:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:52:04 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:31:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:31:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:52:04 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:32:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
+::1 - - [05/Nov/2025:15:52:12 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:32:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:32:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:52:12 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:52:12 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/pending-deposits
+Admin: Found 0 pending deposits
+::1 - - [05/Nov/2025:15:52:22 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:32:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:32:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:52:22 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:32:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:52:22 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
-[API] GET /api/betting/admin/pending-deposits
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:33:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:33:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:52:32 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-[API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:33:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:33:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:52:32 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:33:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:33:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:52:32 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
-[API] GET /api/betting/admin/pending-deposits
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:34:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:34:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:52:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-[API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:34:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:34:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:52:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:34:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:34:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:52:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:35:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:52:52 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
+::1 - - [05/Nov/2025:15:52:52 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:52:52 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
-::1 - - [01/Nov/2025:19:35:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:35:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:53:02 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:35:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:35:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:53:02 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:35:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
+::1 - - [05/Nov/2025:15:53:02 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:36:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:36:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/users
+::1 - - [05/Nov/2025:15:53:04 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:36:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:36:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:53:04 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-[API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:36:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:36:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:53:04 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:37:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
+::1 - - [05/Nov/2025:15:53:12 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:37:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:53:12 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:53:12 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:37:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:53:22 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:37:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:37:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:53:22 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:37:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:53:22 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:38:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/pending-deposits
+::1 - - [05/Nov/2025:15:53:32 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:38:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:38:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:53:32 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:53:32 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[API] GET /api/betting/admin/pending-deposits
+Admin: Found 0 pending deposits
+::1 - - [05/Nov/2025:15:53:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:38:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:38:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:53:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:38:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:53:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
-[API] GET /api/betting/admin/pending-deposits
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:39:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:39:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:53:52 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-[API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:39:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:39:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:53:52 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:39:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:39:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:53:52 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
-[API] GET /api/betting/admin/pending-deposits
-Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:40:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:40:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:02 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-[API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:40:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:40:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-[API] GET /api/betting/admin/transactions
+::1 - - [05/Nov/2025:15:54:02 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:40:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-::1 - - [01/Nov/2025:19:40:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:02 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:40:54 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:04 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:40:54 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:04 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:40:54 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:04 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:40:57 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:12 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:40:57 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:12 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:40:57 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:12 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:41:07 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:22 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:41:07 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:22 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:41:07 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:22 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:41:17 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:32 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:41:17 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:32 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:41:17 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:32 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:41:27 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:41:27 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:41:27 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:41:37 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:52 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:41:37 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:52 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:41:37 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:54:52 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:41:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:02 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:41:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:02 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:41:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:02 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:41:47 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:04 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:41:47 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:04 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:41:47 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:04 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:41:57 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:12 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:41:57 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:12 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:41:57 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:12 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:42:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:22 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:42:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:22 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:42:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:22 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:42:42 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:33 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:42:42 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:33 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:42:42 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:33 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:42:51 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:43 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:42:51 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:43 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:42:51 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:43 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:43:01 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:52 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:43:01 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:52 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:43:01 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:52 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:43:11 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:54 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:43:11 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:54 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:43:11 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:55:54 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:43:21 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:56:03 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:43:21 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:56:03 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:43:21 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:56:03 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/pending-deposits
 Admin: Found 0 pending deposits
-::1 - - [01/Nov/2025:19:43:31 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:56:03 +0000] "GET /api/betting/admin/pending-deposits HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/users
-::1 - - [01/Nov/2025:19:43:31 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 5389 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:56:03 +0000] "GET /api/betting/admin/users HTTP/1.1" 200 6138 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
 [API] GET /api/betting/admin/transactions
-::1 - - [01/Nov/2025:19:43:31 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+::1 - - [05/Nov/2025:15:56:03 +0000] "GET /api/betting/admin/transactions HTTP/1.1" 200 36370 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
