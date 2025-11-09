@@ -34,7 +34,7 @@ const register = async (req, res) => {
       balance: 0
     });
 
-    await user.save();
+        await user.save();
 
     // Generate token
     const token = generateToken({ userId: user._id });
@@ -80,7 +80,7 @@ const login = async (req, res) => {
     if (!user) {
       console.log(`Login failed: User not found for ${email}`);
       return res.status(400).json({ 
-        success: false,
+        success: false, 
         message: 'Invalid credentials' 
       });
     }
@@ -92,17 +92,17 @@ const login = async (req, res) => {
     if (!isMatch) {
       console.log(`Login failed: Invalid password for ${email}`);
       return res.status(400).json({ 
-        success: false,
+        success: false, 
         message: 'Invalid credentials' 
       });
     }
-
+    
     console.log(`Password verified for ${email}`);
 
     // Update last login
     user.lastLogin = new Date();
     await user.save();
-
+    
     // Generate token
     const token = generateToken({ userId: user._id });
 
@@ -187,7 +187,7 @@ const me = async (req, res) => {
 const syncUser = async (req, res) => {
   try {
     const { userId, email, firstName, lastName, balance } = req.body;
-
+    
     let user = await User.findOne({ userId });
 
     if (!user) {
@@ -244,7 +244,7 @@ const generateOTP = () => {
 const forgotPassword = async (req, res) => {
   try {
     const { email } = req.body;
-
+    
     if (!email) {
       return res.status(400).json({ 
         success: false, 
@@ -254,7 +254,7 @@ const forgotPassword = async (req, res) => {
 
     // Find user by email
     const user = await User.findOne({ email: email.toLowerCase() });
-
+    
     if (!user) {
       return res.status(404).json({ 
         success: false, 
@@ -280,13 +280,26 @@ const forgotPassword = async (req, res) => {
     // Try to send email
     const emailSent = await sendOTPEmail(email, otp, 10);
 
+    // Check if SMTP is properly configured
+    const isSmtpConfigured = process.env.SMTP_USER && process.env.SMTP_PASSWORD;
+
+    if (!isSmtpConfigured) {
+      console.warn('⚠️  SMTP not configured - OTP will be shown in response');
+    }
+
+    // Show OTP in response if:
+    // 1. Development mode, OR
+    // 2. Email sending failed, OR  
+    // 3. SMTP is not configured
+    const showOtpInResponse = process.env.NODE_ENV === 'development' || !emailSent || !isSmtpConfigured;
+
     res.json({
       success: true,
-      message: emailSent ? 'OTP sent to your email' : 'OTP generated successfully',
-      // In development or if email fails, return OTP
-      otp: process.env.NODE_ENV === 'development' || !emailSent ? otp : undefined,
+      message: emailSent ? 'OTP sent to your email' : 'OTP generated (check console or contact support)',
+      otp: showOtpInResponse ? otp : undefined,
       expiresIn: 600, // 10 minutes in seconds
-      emailSent
+      emailSent,
+      smtpConfigured: isSmtpConfigured
     });
   } catch (error) {
     console.error('Forgot password error:', error);
@@ -345,8 +358,8 @@ const verifyOTP = async (req, res) => {
         attemptsLeft: 5 - storedData.attempts
       });
     }
-
-    res.json({
+    
+    res.json({ 
       success: true,
       message: 'OTP verified successfully',
       resetToken: generateToken({ 
@@ -367,7 +380,7 @@ const verifyOTP = async (req, res) => {
 const resetPassword = async (req, res) => {
   try {
     const { email, otp, newPassword } = req.body;
-
+    
     if (!email || !otp || !newPassword) {
       return res.status(400).json({ 
         success: false, 
@@ -456,8 +469,8 @@ const resetPassword = async (req, res) => {
     // Generate a fresh token for immediate login
     const token = generateToken({ userId: user._id });
 
-    res.json({
-      success: true,
+    res.json({ 
+      success: true, 
       message: 'Password reset successfully. You can now login with your new password.',
       token, // Optional: can auto-login user
       user: {
@@ -475,17 +488,17 @@ const resetPassword = async (req, res) => {
   } catch (error) {
     console.error('Reset password error:', error);
     res.status(500).json({ 
-      success: false, 
+        success: false, 
       message: 'Server error. Please try again.' 
-    });
-  }
+      });
+    }
 };
 
 // Resend OTP
 const resendOTP = async (req, res) => {
   try {
     const { email } = req.body;
-
+    
     if (!email) {
       return res.status(400).json({ 
         success: false, 
@@ -520,12 +533,18 @@ const resendOTP = async (req, res) => {
     // Try to send email
     const emailSent = await sendOTPEmail(email, otp, 10);
 
+    // Check if SMTP is properly configured
+    const isSmtpConfigured = process.env.SMTP_USER && process.env.SMTP_PASSWORD;
+
+    const showOtpInResponse = process.env.NODE_ENV === 'development' || !emailSent || !isSmtpConfigured;
+
     res.json({
       success: true,
-      message: emailSent ? 'OTP resent to your email' : 'OTP generated successfully',
-      otp: process.env.NODE_ENV === 'development' || !emailSent ? otp : undefined,
+      message: emailSent ? 'OTP resent to your email' : 'OTP generated (check console or contact support)',
+      otp: showOtpInResponse ? otp : undefined,
       expiresIn: 600,
-      emailSent
+      emailSent,
+      smtpConfigured: isSmtpConfigured
     });
   } catch (error) {
     console.error('Resend OTP error:', error);

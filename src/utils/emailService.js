@@ -1,8 +1,8 @@
-const nodemailer = require('nodemailer');
-
+  const nodemailer = require('nodemailer');
+  
 // Create reusable transporter
 let transporter = null;
-
+  
 const createTransporter = () => {
   if (transporter) return transporter;
 
@@ -30,28 +30,28 @@ const sendOTPEmail = async (email, otp, expiresInMinutes = 10) => {
       to: email,
       subject: 'Password Reset OTP - Elite Bet',
       html: `
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <style>
-            body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-            .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-            .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
-            .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+        .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }
             .otp-box { background: white; border: 2px dashed #667eea; padding: 20px; text-align: center; margin: 20px 0; border-radius: 8px; }
             .otp-code { font-size: 32px; font-weight: bold; color: #667eea; letter-spacing: 8px; font-family: 'Courier New', monospace; }
             .footer { text-align: center; margin-top: 20px; font-size: 12px; color: #888; }
             .warning { background: #fff3cd; border-left: 4px solid #ffc107; padding: 12px; margin: 20px 0; }
             .button { display: inline-block; background: #667eea; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; margin: 20px 0; }
-          </style>
-        </head>
-        <body>
-          <div class="container">
-            <div class="header">
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="header">
               <h1>🔐 Password Reset Request</h1>
-            </div>
-            <div class="content">
-              <p>Hi there,</p>
+        </div>
+        <div class="content">
+          <p>Hi there,</p>
               <p>We received a request to reset your password for your Elite Bet account. Use the OTP below to proceed:</p>
               
               <div class="otp-box">
@@ -60,29 +60,29 @@ const sendOTPEmail = async (email, otp, expiresInMinutes = 10) => {
                 <p style="margin: 10px 0 0 0; font-size: 12px; color: #888;">Valid for ${expiresInMinutes} minutes</p>
               </div>
 
-              <div class="warning">
+          <div class="warning">
                 <strong>⚠️ Security Notice:</strong>
                 <ul style="margin: 10px 0; padding-left: 20px;">
                   <li>This OTP expires in ${expiresInMinutes} minutes</li>
                   <li>Never share this code with anyone</li>
                   <li>Elite Bet will never ask for your OTP via phone or email</li>
-                  <li>If you didn't request this, please ignore this email</li>
-                </ul>
-              </div>
+              <li>If you didn't request this, please ignore this email</li>
+            </ul>
+          </div>
 
               <p>Enter this OTP on the password reset page along with your new password.</p>
               
               <p style="color: #666; font-size: 14px; margin-top: 30px;">
                 If you didn't request a password reset, you can safely ignore this email. Your password will remain unchanged.
               </p>
-            </div>
-            <div class="footer">
+        </div>
+        <div class="footer">
               <p>&copy; ${new Date().getFullYear()} Elite Bet. All rights reserved.</p>
-              <p>This is an automated email. Please do not reply.</p>
-            </div>
-          </div>
-        </body>
-        </html>
+          <p>This is an automated email. Please do not reply.</p>
+        </div>
+      </div>
+    </body>
+    </html>
       `
     };
 
@@ -91,6 +91,14 @@ const sendOTPEmail = async (email, otp, expiresInMinutes = 10) => {
     return true;
   } catch (error) {
     console.error('Failed to send OTP email:', error.message);
+    console.error('Email service error details:', error);
+    
+    // Check if SMTP is configured
+    if (!process.env.SMTP_USER || !process.env.SMTP_PASSWORD) {
+      console.warn('⚠️  SMTP not configured! Set SMTP_USER and SMTP_PASSWORD in .env file');
+      console.warn('⚠️  OTP will be shown in console/response instead');
+    }
+    
     // Don't throw error - fall back to showing OTP in console
     return false;
   }
