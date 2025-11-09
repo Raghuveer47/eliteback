@@ -224,6 +224,7 @@ exports.forgotPassword = async (req, res) => {
     console.log(`Link expires in 1 hour and can only be used once`);
     
     // Send password reset email
+    console.log('🔵 Attempting to send password reset email...');
     try {
       const emailHtml = getPasswordResetEmail(resetLink, email);
       await sendEmail(
@@ -231,9 +232,10 @@ exports.forgotPassword = async (req, res) => {
         'Password Reset - Spinzos',
         emailHtml
       );
-      console.log(`✅ Password reset email sent to: ${email}`);
+      console.log(`✅ Password reset email sent successfully to: ${email}`);
     } catch (emailError) {
-      console.error('Failed to send email:', emailError);
+      console.error('❌ Failed to send password reset email:', emailError);
+      console.error('Email error details:', emailError.message);
       // Continue anyway - user might still have the link in development
     }
     
