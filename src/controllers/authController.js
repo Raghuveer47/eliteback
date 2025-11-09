@@ -1,7 +1,20 @@
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 const Transaction = require('../models/Transaction');
-const { sendOTPEmail } = require('../utils/emailService');
+
+// Try Resend first (simpler API), fallback to SMTP
+let sendOTPEmail, sendWelcomeEmail;
+try {
+  const resendService = require('../utils/resendEmailService');
+  sendOTPEmail = resendService.sendOTPEmail;
+  sendWelcomeEmail = resendService.sendWelcomeEmail;
+  console.log('Using Resend email service');
+} catch (error) {
+  const emailService = require('../utils/emailService');
+  sendOTPEmail = emailService.sendOTPEmail;
+  sendWelcomeEmail = emailService.sendWelcomeEmail;
+  console.log('Using SMTP email service');
+}
 
 // Generate JWT token
 const generateToken = (payload) => {
