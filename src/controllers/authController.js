@@ -2,18 +2,25 @@ const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 const Transaction = require('../models/Transaction');
 
-// Try Resend first (simpler API), fallback to SMTP
+// Email service selection based on configuration
 let sendOTPEmail, sendWelcomeEmail;
-try {
+
+// Priority: SendGrid (Twilio) > Resend > SMTP
+if (process.env.SENDGRID_API_KEY) {
+  const twilioService = require('../utils/twilioService');
+  sendOTPEmail = twilioService.sendOTPEmail;
+  sendWelcomeEmail = twilioService.sendWelcomeEmail;
+  console.log('✅ Using Twilio SendGrid email service');
+} else if (process.env.RESEND_API_KEY) {
   const resendService = require('../utils/resendEmailService');
   sendOTPEmail = resendService.sendOTPEmail;
   sendWelcomeEmail = resendService.sendWelcomeEmail;
-  console.log('Using Resend email service');
-} catch (error) {
+  console.log('✅ Using Resend email service');
+} else {
   const emailService = require('../utils/emailService');
   sendOTPEmail = emailService.sendOTPEmail;
   sendWelcomeEmail = emailService.sendWelcomeEmail;
-  console.log('Using SMTP email service');
+  console.log('✅ Using SMTP email service');
 }
 
 // Generate JWT token
