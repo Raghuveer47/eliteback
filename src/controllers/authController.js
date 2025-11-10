@@ -297,41 +297,41 @@ const forgotPassword = async (req, res) => {
 
     console.log(`Password Reset OTP for ${email}: ${otp}`);
 
-    // Check if SMTP is properly configured
-    const isSmtpConfigured = process.env.SMTP_USER && process.env.SMTP_PASSWORD;
+    // Check if ANY email service is configured
+    const isEmailConfigured = !!(
+      process.env.SENDGRID_API_KEY || 
+      process.env.RESEND_API_KEY || 
+      (process.env.SMTP_USER && process.env.SMTP_PASSWORD)
+    );
 
-    if (!isSmtpConfigured) {
-      console.warn('⚠️  SMTP not configured - OTP will be shown in response');
+    if (!isEmailConfigured) {
+      console.warn('⚠️  Email service not configured - OTP will be shown in response');
     }
 
-    // Send email in background (don't wait for it to complete)
+    // Try to send email
     let emailSent = false;
-    sendOTPEmail(email, otp, 10)
-      .then(sent => {
-        emailSent = sent;
-        if (sent) {
-          console.log(`✅ Email sent to ${email}`);
-        } else {
-          console.log(`⚠️  Email failed for ${email}, OTP was shown in response`);
-        }
-      })
-      .catch(err => {
-        console.error(`❌ Email error for ${email}:`, err.message);
-      });
+    try {
+      emailSent = await sendOTPEmail(email, otp, 10);
+      if (emailSent) {
+        console.log(`✅ Email sent successfully to ${email}`);
+      } else {
+        console.log(`⚠️  Email failed for ${email}, OTP will be shown in response`);
+      }
+    } catch (err) {
+      console.error(`❌ Email error for ${email}:`, err.message);
+      emailSent = false;
+    }
 
-    // Show OTP in response if:
-    // 1. Development mode, OR
-    // 2. SMTP is not configured
-    const showOtpInResponse = process.env.NODE_ENV === 'development' || !isSmtpConfigured;
+    // Only show OTP in response if email actually failed
+    const showOtpInResponse = !emailSent;
 
-    // Respond immediately (don't wait for email)
+    // Respond with appropriate message
     res.json({
       success: true,
-      message: isSmtpConfigured ? 'OTP sent to your email' : 'OTP generated (check console or contact support)',
+      message: emailSent ? 'OTP sent to your email' : 'Email service unavailable - use OTP shown below',
       otp: showOtpInResponse ? otp : undefined,
       expiresIn: 600, // 10 minutes in seconds
-      emailSent: isSmtpConfigured, // Assume it will be sent if configured
-      smtpConfigured: isSmtpConfigured
+      emailSent: emailSent
     });
   } catch (error) {
     console.error('Forgot password error:', error);
@@ -562,32 +562,41 @@ const resendOTP = async (req, res) => {
 
     console.log(`Resent OTP for ${email}: ${otp}`);
 
-    // Check if SMTP is properly configured
-    const isSmtpConfigured = process.env.SMTP_USER && process.env.SMTP_PASSWORD;
+    // Check if ANY email service is configured
+    const isEmailConfigured = !!(
+      process.env.SENDGRID_API_KEY || 
+      process.env.RESEND_API_KEY || 
+      (process.env.SMTP_USER && process.env.SMTP_PASSWORD)
+    );
 
-    // Send email in background (don't block response)
-    sendOTPEmail(email, otp, 10)
-      .then(sent => {
-        if (sent) {
-          console.log(`✅ OTP resent via email to ${email}`);
-        } else {
-          console.log(`⚠️  Email failed for ${email}`);
-        }
-      })
-      .catch(err => {
-        console.error(`❌ Resend email error for ${email}:`, err.message);
-      });
+    if (!isEmailConfigured) {
+      console.warn('⚠️  Email service not configured - OTP will be shown in response');
+    }
 
-    const showOtpInResponse = process.env.NODE_ENV === 'development' || !isSmtpConfigured;
+    // Try to send email
+    let emailSent = false;
+    try {
+      emailSent = await sendOTPEmail(email, otp, 10);
+      if (emailSent) {
+        console.log(`✅ OTP resent successfully to ${email}`);
+      } else {
+        console.log(`⚠️  Email failed for ${email}, OTP will be shown in response`);
+      }
+    } catch (err) {
+      console.error(`❌ Resend email error for ${email}:`, err.message);
+      emailSent = false;
+    }
 
-    // Respond immediately
+    // Only show OTP in response if email actually failed
+    const showOtpInResponse = !emailSent;
+
+    // Respond with appropriate message
     res.json({
       success: true,
-      message: isSmtpConfigured ? 'OTP resent to your email' : 'OTP generated (check console or contact support)',
+      message: emailSent ? 'OTP resent to your email' : 'Email service unavailable - use OTP shown below',
       otp: showOtpInResponse ? otp : undefined,
       expiresIn: 600,
-      emailSent: isSmtpConfigured,
-      smtpConfigured: isSmtpConfigured
+      emailSent: emailSent
     });
   } catch (error) {
     console.error('Resend OTP error:', error);
